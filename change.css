@@ -1,0 +1,103 @@
+
+#top
+{
+text-align:center;
+list-style:none;
+font-size:22px;
+font-family:verdana;
+
+}
+#heading {
+text-decoration:underline;
+font-size:10px;
+text-align:center;
+text-transform:uppercase;
+font-family:verdana;
+margin:10px;
+color:#1520A6;
+}
+#contact
+{
+text-align:center;
+}
+#yes
+{
+color:#1520A6;
+font-size:24px;
+}
+.right
+{
+
+display:inline-block;
+float:right;
+}
+.extra
+{
+text-align:left;
+font-size:24px;
+
+}
+.one
+{
+color:white;
+text-align:left;
+font-size:22px;
+font-family:lucida handwriting;
+position:relative;
+padding:10px;
+border:solid black;
+
+}
+.para
+{
+font-size:19px;
+font-family:verdana;
+padding:20px;
+}
+body
+{
+background-color:#3CAEA3;
+}
+
+
+/* styles.css */
+
+/* Define the @keyframes rule for the jump animation */
+@keyframes jumpAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* The word stays at its original position */
+  }
+  40% {
+    transform: translateY(-15px); /* The word jumps up */
+  }
+  60% {
+    transform: translateY(-10px); /* The word starts to come down */
+  }
+}
+
+/* Apply the animation to the word with the class 'jumping-word' */
+.one,#top {
+  font-size: 25px; /* Set the font size to 25 pixels */
+  animation: jumpAnimation 2s infinite; /* Adjust the duration and other animation properties as needed */
+}
+body
+{
+animation: colorAnimation 2s infinite alternate;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #4CAEA3;
+  }
+  50% {
+    background-color: #F7AF9D;
+  }
+  100% {
+    background-color: #B0D0D3;
+  }
+}
+
+
+
+
+
